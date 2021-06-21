@@ -1,13 +1,13 @@
 #
-# Cookbook Name:: python
+# Cookbook:: python
 # Recipe:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright:: (c) 2016 The Authors, All Rights Reserved.
 
 if platform?('ubuntu')
-  package %w[build-essential]
+  package %w(build-essential)
 else
-  package %w[openssl-devel]
+  package %w(openssl-devel)
 end
 
 remote_file '/tmp/Python-3.4.4.tgz' do
