@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: python
+# Cookbook:: python
 # Spec:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright:: (c) 2016 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
@@ -22,13 +22,13 @@ describe 'python::default' do
     end
 
     it 'installs the necessary packages' do
-      expect(chef_run).to install_package(%w[openssl-devel])
+      expect(chef_run).to install_package(%w(openssl-devel))
     end
 
     it 'installs python 3.4.4' do
       expect(chef_run).to install_with_make_ark('python').with({
         version: '3.4.4',
-        url: 'https://www.python.org/ftp/python/3.4.4/Python-3.4.4.tgz'
+        url: 'https://www.python.org/ftp/python/3.4.4/Python-3.4.4.tgz',
       })
     end
   end
@@ -43,8 +43,7 @@ describe 'python::default' do
     end
 
     it 'installs the necessary packages' do
-      expect(chef_run).to install_package(%w[build-essential])
+      expect(chef_run).to install_package(%w(build-essential))
     end
   end
-
 end
