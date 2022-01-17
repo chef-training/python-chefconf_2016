@@ -1,7 +1,7 @@
 #
-# Cookbook Name:: python_spec
+# Cookbook:: python_spec
 # Recipe:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright:: (c) 2016 The Authors, All Rights Reserved.
 
 pip 'django'

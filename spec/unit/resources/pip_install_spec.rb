@@ -20,7 +20,7 @@ describe 'python' do
   # This is the location to place any ChefSpec global configuration/settings
   # @see https://github.com/sethvargo/chefspec#configuration
   let(:settings) do
-    { }
+    {}
   end
 
   # This is required to test the internal components of a LWRP / Custom Resource
